@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Interface</string>
+  <string name="system_category">Système</string>
   <string name="lockscreen_category">Écran de déverrouillage</string>
   <string name="statusbar_category">Barre d\'état</string>
   <string name="navigation_category">Navigation</string>
   <string name="multitasking_category">Multi-tâche</string>
-  <string name="system_category">Système</string>
-  <string name="misc_category">Réglages divers</string>
   <!-- Categories -->
   <string name="animations_category">Animations</string>
   <string name="battery_category">Batterie</string>
-  <string name="download_category">Centre de téléchargement</string>
   <string name="expanded_desktop_category">Bureau étendu</string>
   <string name="misctweaks_category">Réglages divers</string>
   <string name="powermenu_category">Menu Marche/Arrêt</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Notifications</string>
   <string name="wakelockblocker_category">Bloqueur de Wakelock</string>
   <string name="gestures_category">Gestes</string>
+  <string name="doubletap_gestures_category">Gestes par double appui</string>
   <string name="multitasking_category">Multi-tâche</string>
   <string name="multiwindow_category">Multi-fenêtre</string>
   <string name="listview_animations_category">Animations des listes</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Icône Toast</string>
   <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondante dans la notification Toast</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Applications Google (GApps)</string>
-  <string name="gapps_summary">Liste des GApps à installer depuis le recovery</string>
-  <string name="gapps_credit">Bien que les GApps ne soient pas compilées depuis les sources et n\'appartiennent qu\'à Google, nous remercions tout de même les quelques personnes et équipes qui maintiennent ces paquets, et qui nous facilitent grandement les choses.\n\nUn grand merci à la BlackOut, Michael Banks, TKruzze et M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Accès rapide</string>
   <string name="summary_quick_pulldown">Côté %1$s de la barre d\'état glissé vers le bas</string>
@@ -86,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Icône de luminosité</string>
   <string name="brightness_icon_summary">Afficher l\'icône de luminosité à gauche du curseur de luminosité permettant d\'ajuster automatiquement la luminosité</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Trois</string>
+  <string name="qs_num_columns_four">Quatre</string>
+  <string name="qs_num_columns_five">Cinq</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Applications récentes immersives</string>
   <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
@@ -131,6 +129,9 @@
   <string name="expanded_desktop_state">État</string>
   <string name="expanded_enabled_for_all">Activé pour tout</string>
   <string name="expanded_user_configurable">Configurable</string>
+  <string name="expanded_desktop_style">Style</string>
+  <string name="expanded_desktop_style_description">Sélectionner le style par défaut du bureau étendu</string>
+  <string name="expanded_desktop_title">Options</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Forcer les notifications étendues</string>
   <string name="force_expanded_notifications_summary">Disponible uniquement pour les applications prenant en charge les notifications étendues</string>
@@ -148,7 +149,6 @@
   <string name="double_tap_to_sleep_lockscreen_title">Veille par double appui</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Éteindre l\'écran par double appui sur le tiers supérieur ou sur la zone de raccourci inférieure de l\'écran de déverrouillage</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Bloqueur de publicités</string>
   <string name="disable_ads_title">Désactiver les publicités</string>
   <string name="disable_ads_summary">Modifier le fichier hosts pour désactiver les publicités</string>
   <!-- Volume Key Rotation -->
@@ -188,6 +188,10 @@
   <string name="battery_bar_style_regular">Normale</string>
   <string name="battery_bar_style_center_mirrored">Centrée et reflétée</string>
   <string name="battery_bar_style_reversed">Inversée</string>
+  <string name="battery_bar_hide">Masquer</string>
+  <string name="battery_bar_statusbar">Barre d\'état</string>
+  <string name="battery_bar_top_navbar">Au-dessus de la barre de navigation</string>
+  <string name="battery_bar_bottom_navbar">En-dessous de la barre de navigation</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Police d\'écriture de l\'horloge</string>
   <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>
@@ -399,9 +403,6 @@
   <string name="recents_clear_all_location_bottom_right">En bas à droite</string>
   <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
   <string name="recents_clear_all_location_bottom_center">En bas au milieu</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logo</string>
-  <string name="status_bar_du_logo_summary">Afficher le logo de DU sur la gauche de la barre d\'état</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Attention</string>
@@ -463,7 +464,6 @@
   <string name="ga_gestures_rename_title">Renommer le geste</string>
   <string name="ga_gestures_rename_label">Nom du geste</string>
   <string name="ga_gestures_error_loading">Impossible de charger %s. Assurez-vous d\'avoir assez d\'espace de stockage disponible.</string>
-  <string name="trigger_category">Région de déclenchement</string>
   <string name="trigger_width_title">Largeur</string>
   <string name="trigger_width_summary">Ajuster la largeur de la zone de déclenchement</string>
   <string name="trigger_top_title">Position</string>
@@ -582,55 +582,22 @@
   <string name="pulse_settings_summary">Égaliseur audio sur la barre de navigation</string>
   <string name="fling_show_pulse_title">Pulse</string>
   <string name="fling_show_pulse_summary">Visualisation à l\'aspect d\'un égaliseur audio la barre de navigation</string>
+  <string name="pulse_render_mode_title">Mode de rendu</string>
+  <string name="pulse_render_mode_fading_bars">Fondu des blocs</string>
+  <string name="pulse_render_mode_solid_lines">Lignes pleines</string>
   <string name="fling_pulse_color">Couleur de Pulse</string>
   <string name="eos_fling_lavalamp_title">Activer la lampe Lava</string>
   <string name="eos_fling_lavalamp_summary">Pulse anime la lampe Lava</string>
   <string name="pulse_advanced_category">Paramètres avancés</string>
+  <string name="pulse_legacy_mode_advanced_category">Fondu des blocs</string>
+  <string name="pulse_custom_fudge_factor">Fréquence de Pulse</string>
+  <string name="lavamp_solid_speed_title">Vitesse de la lampe Lava</string>
+  <string name="pulse_solid_dimen_category">Lignes pleines</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Largeur des barres</string>
-  <string name="pulse_dimen0">Par défaut</string>
-  <string name="pulse_dimen1">7 dp</string>
-  <string name="pulse_dimen2">8 dp</string>
-  <string name="pulse_dimen3">9 dp</string>
-  <string name="pulse_dimen4">10 dp</string>
-  <string name="pulse_dimen5">11 dp</string>
-  <string name="pulse_dimen6">12 dp</string>
-  <string name="pulse_dimen7">13 dp</string>
-  <string name="pulse_dimen8">15 dp</string>
-  <string name="pulse_dimen9">16 dp</string>
-  <string name="pulse_dimen10">17 dp</string>
-  <string name="pulse_dimen11">18 dp</string>
-  <string name="pulse_dimen12">19 dp</string>
-  <string name="pulse_dimen13">20 dp</string>
-  <string name="pulse_dimen14">21 dp</string>
-  <string name="pulse_dimen15">22 dp</string>
-  <string name="pulse_dimen16">23 dp</string>
-  <string name="pulse_dimen17">24 dp</string>
-  <string name="pulse_dimen18">25 dp</string>
-  <string name="pulse_dimen19">26 dp</string>
   <string name="pulse_custom_div">Espacement des barres</string>
-  <string name="default_div">Par défaut</string>
-  <string name="pulse_block_category">Par défaut</string>
-  <string name="pulse_block_category_title">Taille des blocs</string>
-  <string name="pulse_aggression">Puissance</string>
-  <string name="default_fill">Par défaut</string>
-  <string name="default_pulse_empty">Par défaut</string>
   <string name="pulse_filled_block_size">Taille des blocs</string>
   <string name="pulse_empty_block_size">Espacement des blocs</string>
-  <string name="pulse_fill1">5 dp</string>
-  <string name="pulse_fill2">6 dp</string>
-  <string name="pulse_fill3">7 dp</string>
-  <string name="pulse_fill4">8 dp</string>
-  <string name="pulse_empty1">2 dp</string>
-  <string name="pulse_empty2">3 dp</string>
-  <string name="pulse_empty3">4 dp</string>
-  <string name="pulse_empty4">0 dp</string>
-  <string name="factor0">Normal</string>
-  <string name="factor1">Très lent</string>
-  <string name="factor2">Lent</string>
-  <string name="factor3">Rapide</string>
-  <string name="factor4">Très rapide</string>
-  <string name="pulse_custom_fudge_factor">Fréquence de Pulse</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Dimensions</string>
   <string name="portrait_title">Hauteur (Portrait)</string>
@@ -657,6 +624,15 @@
   <string name="smartbar_ime_action_none">Aucun</string>
   <string name="smartbar_ime_action_arrows">Touches de direction</string>
   <string name="smartbar_ime_action_switcher">Sélecteur de clavier</string>
+  <string name="smartbar_backup_current_config_title">Enregistrer le profil</string>
+  <string name="smartbar_restore_config_title">Restaurer le profil</string>
+  <string name="smartbar_config_name_edit_dialog_title">Nom du profil</string>
+  <string name="smartbar_config_name_edit_dialog_message">Saisir un nom ou laisser vide</string>
+  <string name="smartbar_config_dialog_title">Profils Smartbar</string>
+  <string name="smartbar_config_backup_success_toast">Profil enregistré</string>
+  <string name="smartbar_config_restore_success_toast">Profil restauré</string>
+  <string name="smartbar_config_backup_error_toast">Erreur lors de la sauvegarde du profil</string>
+  <string name="smartbar_config_restore_error_toast">Erreur lors de la restauration du profil</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Écran de déverrouillage</string>
   <string name="lockscreen_config_title">Paramètres</string>
@@ -760,28 +736,12 @@
   <string name="shortcut_action_recent">Applications récentes</string>
   <string name="shortcut_action_power">Mise en veille</string>
   <string name="shortcut_action_search">Recherche dans l\'application</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">liste</string>
-  <string name="sizer_title">Suppression d\'application système</string>
-  <string name="caution">Attention\u00A0!</string>
-  <string name="sizer_message_startup">Cet outil permet de supprimer des applications système. À utiliser avec précaution et uniquement pour des applications dont la suppression est sans danger.</string>
-  <string name="cancel">Annuler</string>
-  <string name="sizer_message_delete">Supprimer cette application\u00A0?</string>
-  <string name="btn_delete">Supprimer les applications sélectionnées\u00A0!</string>
-  <string name="delete_progress_title">Suppression en cours</string>
-  <string name="delete_progress">Suppression des fichiers sélectionnés en cours\u2026</string>
-  <string name="delete_success">Supprimée(s)</string>
-  <string name="delete_fail">Suppression impossible</string>
-  <string name="btn_profile">Profil</string>
-  <string name="sizer_message_sdnowrite">Impossible d\'écrire sur la carte SD</string>
-  <string name="sizer_message_sdnoread">Impossible de lire la carte SD</string>
-  <string name="sizer_message_filesuccess">Profil créé</string>
-  <string name="sizer_message_filefail">Impossible de créer le profil</string>
-  <string name="sizer_message_noselect">Aucune sélection</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Suppression d\'application système</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Lecteur de musique Tomahawk</string>
-  <string name="tomahawk_music_player_summary">Un lecteur de musique Android Open Source, avec de nombreuses fonctionnalités</string>
+  <string name="listsystem">liste</string>
+  <string name="cancel">Annuler</string>
+  <string name="message_delete">Supprimer cette application ?</string>
+  <string name="message_noselect">Aucune sélection</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Gestionnaire de tâches</string>
   <string name="enable_task_manager_summary">Activer le Gestionnaire de tâches dans la barre d\'état</string>
@@ -928,4 +888,29 @@
   <string name="screenshot_crop_and_share_summary">Afficher une fenêtre d\'édition après avoir pris une capture d\'écran permettant d\'effectuer certaines opérations comme le recadrage, la sauvegarde ou le partage</string>
   <string name="screenshot_crop_behavior_title">Mode de recadrage</string>
   <string name="screenshot_crop_behavior_summary">Toujours utiliser l\'image de la zone de recadrage, même si le bouton \"Appliquer\" n\'a pas été appuyé</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Après avoir choisi un raccourci ci-dessous, glisser verticalement avec 3 doigts en un seul mouvement de haut en bas déclenche l\'action sélectionnée.</string>
+  <string name="three_finger_swipe_gesture_title">Geste avec trois doigts</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Effet de transition des onglets des Dirty Tweaks</string>
+  <string name="effect_default">Par défaut</string>
+  <string name="effect_accordion">Accordéon</string>
+  <string name="effect_background_to_foreground">D\'arrière en avant</string>
+  <string name="effect_cube_in">Cube intérieur</string>
+  <string name="effect_cube_out">Cube extérieur</string>
+  <string name="effect_depth_page">Fondu</string>
+  <string name="effect_flip_horizontal">Retournement horizontal</string>
+  <string name="effect_flip_vertical">Retournement vertical</string>
+  <string name="effect_foreground_to_background">D\'avant en arrière</string>
+  <string name="effect_rotate_down">Pivoter vers le bas</string>
+  <string name="effect_rotate_up">Pivoter vers le haut</string>
+  <string name="effect_scale_in_out">Mise à l\'échelle</string>
+  <string name="effect_stack">Empiler</string>
+  <string name="effect_tablet">Tablette</string>
+  <string name="effect_zoom_in">Zoom avant</string>
+  <string name="effect_zoom_out_slide">Zoom arrière coulissant</string>
+  <string name="effect_zoom_out">Zoom arrière</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Localisation</string>
+  <string name="qs_advanced_location_summary">Activer les paramètres avancés de localisation dans le volet des paramètres</string>
 </resources>

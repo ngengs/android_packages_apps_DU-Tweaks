@@ -17,17 +17,14 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Tabs -->
-  <string name="generalui_category">Megjelenés</string>
+  <string name="system_category">Rendszer</string>
   <string name="lockscreen_category">Zárképernyő</string>
   <string name="statusbar_category">Állapotsor</string>
   <string name="navigation_category">Navigáció</string>
   <string name="multitasking_category">Multi-Tasking</string>
-  <string name="system_category">Rendszer</string>
-  <string name="misc_category">Egyebek</string>
   <!-- Categories -->
   <string name="animations_category">Animációk</string>
   <string name="battery_category">Akkumulátor</string>
-  <string name="download_category">Letöltő központ</string>
   <string name="expanded_desktop_category">Kiterjesztett képernyő</string>
   <string name="misctweaks_category">Egyéb trükkök</string>
   <string name="powermenu_category">Kikapcsoló menü</string>
@@ -38,6 +35,7 @@
   <string name="lockscreen_notifications_category">Zárképernyő értesítések</string>
   <string name="wakelockblocker_category">Wakelock blokkoló</string>
   <string name="gestures_category">Gesztusok</string>
+  <string name="doubletap_gestures_category">Dupla érintéses gesztusok</string>
   <string name="multitasking_category">Multi-Tasking</string>
   <string name="multiwindow_category">Multi-Window</string>
   <string name="listview_animations_category">ListaNézet animáció</string>
@@ -64,10 +62,6 @@
   <!-- Toast Icons -->
   <string name="toast_icon_title">Buborékszöveg ikon</string>
   <string name="toast_icon_summary">A buborékszöveghez tartozó alkalmazás ikonjának megjelenítése</string>
-  <!-- Download Center -->
-  <string name="gapps_title">Google alkalmazások (GAPPS)</string>
-  <string name="gapps_summary">Gapps csomagok listája, amit a recoveryvel telepíthet</string>
-  <string name="gapps_credit">Noha a Gapps csomagok nem forrásból összeállítottak, így nem tartoznak senkihez, csak a Google-hez, mégis szeretnénk megköszönni néhány egyénnek és csoportnak, amelyek fenntartják ezeket a csomagokat mindannyiunknak, így megkönnyítve mindenki dolgát.\n\nKülön köszönet: Team BlackOut, Michael Banks, TKruzze és M. Wasif Chauhdary</string>
   <!-- Status bar quick qs pulldown -->
   <string name="title_quick_pulldown">Gyors legördítés</string>
   <string name="summary_quick_pulldown">Gyors beállítások megjelenítése az értesítési sáv %1$s oldalán történő lehúzásakor</string>
@@ -86,6 +80,10 @@
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Fényerő ikon </string>
   <string name="brightness_icon_summary">Fényerő ikon megjelenítése a fényerőcsúszka bal oldalán az automatikus fényerő beállításához</string>
+  <!-- Quick settings columns -->
+  <string name="qs_num_columns_three">Három</string>
+  <string name="qs_num_columns_four">Négy</string>
+  <string name="qs_num_columns_five">Öt</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Teljes képernyős előzmények</string>
   <string name="immersive_recents_summary">Előzmények képernyő megjelenésének módosítása</string>
@@ -131,6 +129,9 @@
   <string name="expanded_desktop_state">Kiterjesztett állapot</string>
   <string name="expanded_enabled_for_all">Mindenre engedélyezve</string>
   <string name="expanded_user_configurable">Felhasználói beállítás</string>
+  <string name="expanded_desktop_style">Kiterjesztett asztal stílusa</string>
+  <string name="expanded_desktop_style_description">Válasszon egy alapértelmezett kiterjesztett asztal stílust</string>
+  <string name="expanded_desktop_title">Kiterjesztett asztal beállítások</string>
   <!-- Force expanded notifications -->
   <string name="force_expanded_notifications_title">Kiterjesztett üzenetek kényszerítése</string>
   <string name="force_expanded_notifications_summary">Csak azon alkalmazásokra érvényes, melyek támogatják azt</string>
@@ -148,9 +149,8 @@
   <string name="double_tap_to_sleep_lockscreen_title">DT2S a zárképernyőn</string>
   <string name="double_tap_to_sleep_lockscreen_summary">Érintsd meg kétszer a fleső harmadot, vagy az alsó hivatkozási sávot a kijelző kikapcsolásához</string>
   <!-- Ad Blocker -->
-  <string name="adblocker_title">Hírdetés blokkoló</string>
-  <string name="disable_ads_title">Hírdetések tiltása</string>
-  <string name="disable_ads_summary">Hosztok változtatása a hírdetések tiltásához</string>
+  <string name="disable_ads_title">Hirdetések tiltása</string>
+  <string name="disable_ads_summary">Hosztok változtatása a hirdetések tiltásához</string>
   <!-- Volume Key Rotation -->
   <string name="swap_volume_buttons_title">Átrendezés</string>
   <string name="swap_volume_buttons_summary">Hangerő gombok felcserélése, ha a képernyő elforgatásra kerül</string>
@@ -188,6 +188,10 @@
   <string name="battery_bar_style_regular">Hagyományos</string>
   <string name="battery_bar_style_center_mirrored">Középre-tükrözött</string>
   <string name="battery_bar_style_reversed">Fordított</string>
+  <string name="battery_bar_hide">Elrejtés</string>
+  <string name="battery_bar_statusbar">Állapotsor</string>
+  <string name="battery_bar_top_navbar">Navigációs sáv tetején</string>
+  <string name="battery_bar_bottom_navbar">Navigációs sáv alján</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Óra betűtípusok</string>
   <string name="lock_clock_font_summary">A zárképernyő óra alapértelmezett betűtípusának változtatása</string>
@@ -273,7 +277,7 @@
   <string name="wallpaper_close_title">Kezdőképernyő betöltési animáció</string>
   <string name="wallpaper_intra_open_title">Előzmény oldal nyitási animáció</string>
   <string name="wallpaper_intra_close_title">Előzmény oldal bezárási animáció</string>
-  <string name="animation_duration_title">Animáció hosszan</string>
+  <string name="animation_duration_title">Animáció hossza</string>
   <string name="title_animation_no_override">Alkalmazás felülírások megakadályozása</string>
   <string name="summary_animation_no_override">Átmenetek alkalmazások általi felülírásának megakadályozása</string>
   <string name="animation_duration_default">Alapértelmezett</string>
@@ -399,9 +403,6 @@
   <string name="recents_clear_all_location_bottom_right">Jobb alul</string>
   <string name="recents_clear_all_location_bottom_left">Bal alul</string>
   <string name="recents_clear_all_location_bottom_center">Alul középen</string>
-  <!-- Statusbar DU logo -->
-  <string name="status_bar_du_logo_title">DU logó</string>
-  <string name="status_bar_du_logo_summary">Engedélyezi a DU logó megjelenítését az állapotsor jobb oldalán</string>
   <!-- Density Changer -->
   <string name="dpi">DPI</string>
   <string name="su_dialog_error_title">Figyelmeztetés</string>
@@ -463,7 +464,6 @@
   <string name="ga_gestures_rename_title">Gesztus átnevezése</string>
   <string name="ga_gestures_rename_label">Gesztus név</string>
   <string name="ga_gestures_error_loading">Nem tudom betölteni: %s. Győződjön meg róla, hogy a tárolóhely rendelkezésre áll e.</string>
-  <string name="trigger_category">Indítási zóna</string>
   <string name="trigger_width_title">Indítási szélesség</string>
   <string name="trigger_width_summary">Indítási terület szélességének beállítása</string>
   <string name="trigger_top_title">Indítási pozíció</string>
@@ -579,58 +579,25 @@
   <string name="pulse_help_policy_notice_title">Pulse névjegy</string>
   <string name="pulse_help_policy_notice_summary">Pulse egy hangerősáv stílusú audiovizualizáció a navigációs sávon, ha megy a zene. Pulse néhány audió forrással nem működik, miközben az eszköz hangszóróján hallgatod azt</string>
   <string name="pulse_settings">Pulse</string>
-  <string name="pulse_settings_summary">Navigációs sáv audiovizualizáció</string>
+  <string name="pulse_settings_summary">Navigációs sáv audió grafikus hangszínszabályzó</string>
   <string name="fling_show_pulse_title">Pulse megjelenítése</string>
-  <string name="fling_show_pulse_summary">Audiovizualizáció a navigációs sávon</string>
+  <string name="fling_show_pulse_summary">Audió grafikus hangszínszabályzó a navigációs sávon</string>
+  <string name="pulse_render_mode_title">Render mód</string>
+  <string name="pulse_render_mode_fading_bars">Halványuló blokkok</string>
+  <string name="pulse_render_mode_solid_lines">Folytonos vonalak</string>
   <string name="fling_pulse_color">Pulse színe</string>
   <string name="eos_fling_lavalamp_title">Lávalámpa bekapcsolása</string>
   <string name="eos_fling_lavalamp_summary">Pulse lávalámpa stílust animál a színkeverésnél</string>
   <string name="pulse_advanced_category">Haladó</string>
+  <string name="pulse_legacy_mode_advanced_category">Halványuló blokkok üzemmód beállításai</string>
+  <string name="pulse_custom_fudge_factor">Józan ész szint</string>
+  <string name="lavamp_solid_speed_title">Lávalámpa sebessége</string>
+  <string name="pulse_solid_dimen_category">Folytonos vonalak üzemmód beállításai</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Sáv szélessége</string>
-  <string name="pulse_dimen0">Alapértelmezett</string>
-  <string name="pulse_dimen1">7dp</string>
-  <string name="pulse_dimen2">8dp</string>
-  <string name="pulse_dimen3">9dp</string>
-  <string name="pulse_dimen4">10dp</string>
-  <string name="pulse_dimen5">11dp</string>
-  <string name="pulse_dimen6">12dp</string>
-  <string name="pulse_dimen7">13dp</string>
-  <string name="pulse_dimen8">15dp</string>
-  <string name="pulse_dimen9">16dp</string>
-  <string name="pulse_dimen10">17dp</string>
-  <string name="pulse_dimen11">18dp</string>
-  <string name="pulse_dimen12">19dp</string>
-  <string name="pulse_dimen13">20dp</string>
-  <string name="pulse_dimen14">21dp</string>
-  <string name="pulse_dimen15">22dp</string>
-  <string name="pulse_dimen16">23dp</string>
-  <string name="pulse_dimen17">24dp</string>
-  <string name="pulse_dimen18">25dp</string>
-  <string name="pulse_dimen19">26dp</string>
   <string name="pulse_custom_div">Sáv térköz</string>
-  <string name="default_div">Alapértelmezett</string>
-  <string name="pulse_block_category">Alapértelmezett</string>
-  <string name="pulse_block_category_title">Blokk mérete</string>
-  <string name="pulse_aggression">Intenzitás</string>
-  <string name="default_fill">Alapértelmezett</string>
-  <string name="default_pulse_empty">Alapértelmezett</string>
   <string name="pulse_filled_block_size">Blokk mérete</string>
   <string name="pulse_empty_block_size">Blokk térköz</string>
-  <string name="pulse_fill1">5dp</string>
-  <string name="pulse_fill2">6dp</string>
-  <string name="pulse_fill3">7dp</string>
-  <string name="pulse_fill4">8dp</string>
-  <string name="pulse_empty1">2dp</string>
-  <string name="pulse_empty2">3dp</string>
-  <string name="pulse_empty3">4dp</string>
-  <string name="pulse_empty4">0dp</string>
-  <string name="factor0">Normál</string>
-  <string name="factor1">Laza</string>
-  <string name="factor2">Lassú</string>
-  <string name="factor3">Hyper</string>
-  <string name="factor4">Őrült</string>
-  <string name="pulse_custom_fudge_factor">Vizualizáló érzékenységi szint</string>
   <!-- Navbar height -->
   <string name="navigation_bar_size_title">Sáv mérete</string>
   <string name="portrait_title">Álló magasság</string>
@@ -657,6 +624,15 @@
   <string name="smartbar_ime_action_none">Nincs</string>
   <string name="smartbar_ime_action_arrows">Beviteli nyilak</string>
   <string name="smartbar_ime_action_switcher">Billentyűzet váltó</string>
+  <string name="smartbar_backup_current_config_title">Profil mentése</string>
+  <string name="smartbar_restore_config_title">Profil visszaállítása</string>
+  <string name="smartbar_config_name_edit_dialog_title">Smartbar profilnév</string>
+  <string name="smartbar_config_name_edit_dialog_message">Adjon meg nevet, vagy hagyja üresen</string>
+  <string name="smartbar_config_dialog_title">Smartbar profilok</string>
+  <string name="smartbar_config_backup_success_toast">Smartbar profil mentése sikeres</string>
+  <string name="smartbar_config_restore_success_toast">Smartbar profil sikeresen visszaállítva</string>
+  <string name="smartbar_config_backup_error_toast">Hiba a Smartbar profil mentésekor</string>
+  <string name="smartbar_config_restore_error_toast">Hiba a Smartbar profil visszaállításakor</string>
   <!-- Lock screen wallpaper -->
   <string name="lockscreen_category_title">Zárképernyő</string>
   <string name="lockscreen_config_title">Zárképernyő beállítások</string>
@@ -760,28 +736,12 @@
   <string name="shortcut_action_recent">Előzmények</string>
   <string name="shortcut_action_power">Képernyő ki</string>
   <string name="shortcut_action_search">Alkalmazáson belüli keresés</string>
-  <!-- SlimSizer -->
-  <string name="listsystem">lista</string>
-  <string name="sizer_title">Alkalmazás eltávolító</string>
-  <string name="caution">Vigyázat!</string>
-  <string name="sizer_message_startup">Ez az eszköz lehetővé teszi, hogy törölje a rendszeralkalmazásokat. Használja óvatosan és csak azon alkalmazásokat törölje, melyekről tudja, hogy biztonságosan eltávolíthatóak.</string>
-  <string name="cancel">Mégsem</string>
-  <string name="sizer_message_delete">Biztosan törölni szeretnéd ezt az alkalmazást?</string>
-  <string name="btn_delete">Kiválasztottak törlése most!</string>
-  <string name="delete_progress_title">Törlés</string>
-  <string name="delete_progress">Kijelölt fájlok törlése folyamatban\u2026</string>
-  <string name="delete_success">Törölve</string>
-  <string name="delete_fail">Törlés sikertelen</string>
-  <string name="btn_profile">Profil</string>
-  <string name="sizer_message_sdnowrite">SD-kártya írási hiba.</string>
-  <string name="sizer_message_sdnoread">SD-kártya olvasási hiba.</string>
-  <string name="sizer_message_filesuccess">Létrehozott profil.</string>
-  <string name="sizer_message_filefail">Profil létrehozása sikertelen.</string>
-  <string name="sizer_message_noselect">Nincs kijelölés.</string>
+  <!-- App Remover -->
   <string name="system_app_remover">Rendszeralkalmazás eltávolító</string>
-  <!-- Tomahawk Music Player -->
-  <string name="tomahawk_music_player_title">Tomahawk\'s Music Player</string>
-  <string name="tomahawk_music_player_summary">Egy nyílt forráskódú Android zenelejátszó kitűnő fejlesztőkkel és funkciókkal</string>
+  <string name="listsystem">lista</string>
+  <string name="cancel">Mégsem</string>
+  <string name="message_delete">Biztosan törölni szeretnéd ezt az alkalmazást?</string>
+  <string name="message_noselect">Nincs kiválasztott elem</string>
   <!-- Task Manager -->
   <string name="enable_task_manager_title">Feladatkezelő</string>
   <string name="enable_task_manager_summary">A kiterjesztett állapotsori területen lévő feladatkezelő gombhoz rendelt műveletek engedélyezése/tiltása</string>
@@ -928,4 +888,29 @@
   <string name="screenshot_crop_and_share_summary">A szerkesztő ablak megjelenítése képernyőmentés után, annak érdekében, hogy elvégezhessen bizonyos műveleteket, mint a vágás, mentés és megosztás</string>
   <string name="screenshot_crop_behavior_title">Vágási mód</string>
   <string name="screenshot_crop_behavior_summary">Mindig használja a körülvágási területen belüli képet, még akkor is, ha az alkalmaz gomb nem került megnyomása</string>
+  <!-- Three finger swipe gesture -->
+  <string name="three_finger_gesture_info">Miután kiválasztotta a célt alulról, 3 ujját egyetlen mozdulattal húzza függőlegesen fentről lefelé, hogy a kiválasztott művelet aktiválódjon.</string>
+  <string name="three_finger_swipe_gesture_title">Három ujjas csúsztatási gesztusok</string>
+  <!-- DirtyTweaks tabs slide effects -->
+  <string name="tabs_effect_title">Dirty trükkök füleinek áttűnési hatása</string>
+  <string name="effect_default">Alapértelmezett</string>
+  <string name="effect_accordion">Harmónika</string>
+  <string name="effect_background_to_foreground">Háttér előtérbe</string>
+  <string name="effect_cube_in">Kocka belül</string>
+  <string name="effect_cube_out">Kocka kívül</string>
+  <string name="effect_depth_page">Mély oldal</string>
+  <string name="effect_flip_horizontal">Megfordítás vízszintesen</string>
+  <string name="effect_flip_vertical">Megfordítás függőlegesen</string>
+  <string name="effect_foreground_to_background">Előtér háttérbe</string>
+  <string name="effect_rotate_down">Forgatás lefelé</string>
+  <string name="effect_rotate_up">Forgatás felfelé</string>
+  <string name="effect_scale_in_out">Nagyítás</string>
+  <string name="effect_stack">Kártyapakli</string>
+  <string name="effect_tablet">Tablet</string>
+  <string name="effect_zoom_in">Nagyítás</string>
+  <string name="effect_zoom_out_slide">Dia csökkentése</string>
+  <string name="effect_zoom_out">Kicsinyítés</string>
+  <!-- QS location sensors mode -->
+  <string name="qs_advanced_location_title">Speciális helymeghatározási beállítások</string>
+  <string name="qs_advanced_location_summary">Engedélyezi a helymeghatározás speciális beállításat a gyors beállításokban</string>
 </resources>
